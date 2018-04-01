@@ -1,0 +1,25 @@
+@import url("screen.css") screen;
+@import url("print.css") print;
+
+ol {
+    list-style: upper-roman;
+    }
+
+a:link {
+    color: blue;
+    }
+a:visited {
+    color: purple;
+    }
+
+ h1 {
+    font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+    }
+
+span.title {
+    font-style: italic;
+    }
+
+span.author {
+    font-variant: small-caps;
+    }

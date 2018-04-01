@@ -1,0 +1,50 @@
+body {
+    padding-left: 15em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: cadetblue;
+    background-color: ghostwhite;
+    }
+
+ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 2em;
+    left: 1em;
+    width: 12em;
+    }
+
+ul.navbar > li {
+    background: antiquewhite;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border-right: 1em solid palegreen;
+    }
+
+ul.navbar a {
+    text-decoration: none;
+    }
+
+ul.navbar a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+ul.navbar li li {
+    display: none;
+}
+
+ul.navbar li:hover li {
+    display: block;
+}
+
+footer {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted;
+    }
+
+p.wydruk {
+    display:none;
+}
