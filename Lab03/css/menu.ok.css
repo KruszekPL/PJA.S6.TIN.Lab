@@ -1,0 +1,49 @@
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav {
+    background: #d3d3d3;
+    border-radius: 10px 10px 0px 0px;
+}
+
+nav > ul {
+    text-align: center;
+}
+
+nav ul li {
+    border: 1px solid black;
+    margin: 5px;
+    list-style: none;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    display: inline-block;
+    margin-bottom: 0px;
+    border-bottom: 0;
+    background: #d3d3d3;
+}
+
+.clickable {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav .clickable:hover {
+    background: yellow;
+}
+
+.selected {
+    background: white;
+}
+
+article {
+    clear: both;
+    float: left;
+    margin-top:10px;
+}
+
+ul {
+    padding: 0;
+    white-space:nowrap;
+}

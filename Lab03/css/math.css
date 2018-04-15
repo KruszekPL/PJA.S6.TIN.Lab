@@ -1,0 +1,58 @@
+body {
+    counter-reset: section 0;
+}
+
+h2 {
+    counter-reset: subsection 0 theory 0 picture 0;
+}
+
+h2::before {
+    counter-increment: section 1;
+    content: 'Rozdział '
+    counter(section) '. ';
+}
+
+h3::before {
+    counter-increment: subsection 1;
+    content: counter(section) 
+    '.'
+    counter(subsection)
+    ' ';
+}
+
+p.definition::before {
+    font-weight: bold;
+    counter-increment: theory 1;
+    content: 'Definicja '
+    counter(section)
+    '.'
+    counter(theory)
+    ' '
+}
+
+p.theorem::before {
+    font-weight: bold;
+    counter-increment: theory 1;
+    content: 'Twierdzenie '
+    counter(section)
+    '.'
+    counter(theory)
+    ' '
+}
+
+p.proof::before {
+    font-style: italic;
+    content: 'Dowód. '
+}
+
+figcaption::before {
+    font-style: normal;
+    counter-increment: picture;
+    content: 'Rysunek '
+    counter(picture)
+    '. '
+}
+
+figcaption {
+    font-style: italic;
+}

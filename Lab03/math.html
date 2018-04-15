@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+   <title>Geometria Euklidesowa</title>
+   <link rel="stylesheet" href="css/math.css" />
+   <meta charset='utf-8' />
+</head>
+<body>
+<header>
+    <h1>Geometria Euklidesowa</h1>
+</header>
+
+<article>
+    <h2>Wektory</h2>
+        <h3>Dodawanie wektorów</h3>
+            <p class="definition">Sumą wektorów AB i&nbsp;BC jest wektor AC</p>
+        <h3>Łączność dodawania wektorów</h3>
+<p class="theorem">Twierdzenie. Dodawanie wektorów jest łączne.</p>
+<p class="proof">Patrz obrazek.</p>
+<figure>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+<defs>
+<marker id="circle" markerWidth="8" markerHeight="8" refX="5" refY="5">
+        <circle cx="5" cy="5" r="2" style="stroke: none; fill:#000000;"/>
+    </marker>
+   <marker id="arrow" markerWidth="9" markerHeight="9" refX="9" refY="5" orient="auto">
+   <path d="M2,3 L2,7 L9,5 Z" style="fill: #000000;" />
+</marker>
+</defs>
+
+    <!-- kropka i strzałka -->
+<line x1="10" y1="100" x2="100" y2="10" style="stroke:red; stroke-width:2; marker-end: url(#arrow);marker-start: url(#circle);" />
+
+<line x1="100" y1="10" x2="200" y2="60" style="stroke:red; stroke-width:2; marker-end: url(#arrow);marker-start: url(#circle);" />
+    
+<line x1="200" y1="60" x2="150" y2="150" style="stroke:red; stroke-width:2; marker-end: url(#arrow);marker-start: url(#circle);" />
+
+    <!-- strzałka -->
+<line x1="10" y1="100" x2="150" y2="150" style="stroke:red; stroke-width:2; marker-end: url(#arrow);" />
+    
+<line x1="10" y1="100" x2="200" y2="60" style="stroke:red; stroke-width:2; marker-end: url(#arrow);" />
+    
+<line x1="100" y1="10" x2="150" y2="150" style="stroke:red; stroke-width:2; marker-end: url(#arrow);" />
+    
+  <!-- napisy -->
+    
+    <text x="50"  y="50"
+          transform="rotate(-45 50, 50)"
+          style="stroke:none; fill:#000000;font-style:italic"
+          >a</text>
+    <text x="150"  y="25"
+          transform="rotate(30 150, 25)"
+          style="stroke:none; fill:#000000;font-style:italic"
+          >b</text>
+    <text x="180"  y="110"    
+          style="stroke:none; fill:#000000;font-style:italic"
+          >c</text>
+    <text x="60"  y="110"  transform="rotate(20 60, 110)"
+          style="stroke:none; fill:#000000;font-style:italic"
+          >a+b+c</text>
+        <text x="60"  y="83"  transform="rotate(-10 60, 83)"
+          style="stroke:none; fill:#000000;font-style:italic"
+          >a+b</text>
+        <text x="115"  y="40"  transform="rotate(70 115, 40)"
+          style="stroke:none; fill:#000000;font-style:italic"
+          >b+c</text>
+    
+</svg>
+<figcaption>Łączność dodawania wektorów</figcaption>
+</figure>
+</article>
+
+
+<article>
+<h2>Trójkąty</h2>
+<h3>Twierdzenie Pitagoresa</h3>
+<p class="theorem">W trójkącie prostokątnym
+<math xmlns="http://www.w3.org/1998/Math/MathML"
+      display="block">
+  <mrow>
+      <msup><mi>a</mi><mn>2</mn></msup>
+      <mo>=</mo>
+      <msup><mi>b</mi><mn>2</mn></msup>
+         <mo>+</mo>
+      <msup><mi>c</mi><mn>2</mn></msup>
+  </mrow>
+</math>
+</p>
+<h3>Nierówność trójkąta</h3>
+<p class="theorem">W każdym trójkącie
+<math xmlns="http://www.w3.org/1998/Math/MathML"
+      display="block">
+  <mrow>
+      <mi>a</mi>
+      <mo>&lt;</mo>
+      <mi>b</mi>
+         <mo>+</mo>
+      <mi>c</mi>
+  </mrow>
+</math>
+</p>
+</article>
+    
+</body>
+</html>
