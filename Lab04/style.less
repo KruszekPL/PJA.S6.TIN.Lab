@@ -1,0 +1,130 @@
+@pink: rgb(255, 214,214);
+@light_pink: lighten(@pink, 3%);
+@lighter_pink: lighten(@pink, 6%);
+@dark_pink: darken(@pink, 3%);
+@darker_pink: darken(@pink, 6%);
+
+body {
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div {
+  padding: 10px;  
+}
+
+#container {
+  padding: initial;  
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+  display: flex;  
+  flex-flow: row wrap;
+}
+
+header {
+  padding: 10px;
+  background-color: @dark_pink;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  background-image: url("images/bg_nav.png");
+  
+  a {
+    padding: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-image: url("images/bg_nav.png");
+  }  
+  
+  a:hover {
+    background-image: url("images/bg_nav_h.png");  
+  }
+}
+
+a {
+  color: #000;
+}
+
+#main {
+  background-color: @lighter_pink;
+}
+
+#left {
+  background-color: @light_pink;
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h3 {
+    font-size: 0.9em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+}
+
+#important {
+  background-color: @pink;
+
+  ul {
+    list-style-image: url('images/bullet.png');
+    line-height: 2.5em;
+  }
+}
+
+footer {
+  background-color: @darker_pink;
+}
+
+header, footer {
+  text-align: center;
+}
+
+/* All items to be 100% width */
+#container > * {
+  flex: 1 100%;
+}
+
+@media all and (min-width: 600px) {
+  #main { flex: 1 100%; }
+  #left, #important { flex: 1; }
+}
+
+@media all and (min-width: 800px) {
+  #main { flex: 5;}
+  #left { flex: 1 100px; }
+  #important { flex: 1 100px; }
+
+  header { order: 0; }
+  #left { order: 1; }
+  #main { order: 2; }
+  #important { order: 3; }
+  footer { order: 4; }
+}
+
+@media all and (max-width: 800px) {
+  nav ul {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  nav ul {
+    flex-flow: column wrap;
+  }
+  
+  nav ul a { 
+    text-align: center; 
+  }
+}
