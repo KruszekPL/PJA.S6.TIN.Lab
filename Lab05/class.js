@@ -1,4 +1,3 @@
-/*jshint globalstrict: true, devel: true, node:true */
 'use strict';
 
 function switchClassName(obj, str) {
@@ -20,10 +19,10 @@ function switchClassName(obj, str) {
 }
 
 // Testujemy
-var obj = { className: 'first bordered' };
+// var obj = { className: 'first bordered' };
 
-switchClassName(obj, 'visible');
-console.log(obj.className);
+// switchClassName(obj, 'visible');
+// console.log(obj.className);
 
-switchClassName(obj, 'bordered');
-console.log(obj.className);
+// switchClassName(obj, 'bordered');
+// console.log(obj.className);

@@ -23,7 +23,7 @@ String.prototype.erLik = function(text2) {
 }
 
 //Testujemy 
-var test = new String("bokmål");
+// var test = new String("bokmål");
 
-console.log(test.erLik("bokmaal"));
-console.log(test.erLik("bokmal"));
+// console.log(test.erLik("bokmaal"));
+// console.log(test.erLik("bokmal"));

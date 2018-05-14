@@ -1,4 +1,3 @@
-/*jshint globalstrict: true, devel: true, node:true */
 'use strict';
 
 function sum() {
@@ -10,4 +9,4 @@ function sum() {
 }
 
 // Testujemy 
-console.log(sum(0, 1, 2));
+// console.log(sum(0, 1, 2));

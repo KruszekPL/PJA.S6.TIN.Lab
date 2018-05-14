@@ -15,10 +15,10 @@ function createBuffer() {
 }
 
 // Testujemy
-var buffer = createBuffer();
+// var buffer = createBuffer();
 
-buffer('Data');
-buffer(' aequatione ');
-buffer('quotcunque');
+// buffer('Data');
+// buffer(' aequatione ');
+// buffer('quotcunque');
 
-console.log(buffer());
+// console.log(buffer());
