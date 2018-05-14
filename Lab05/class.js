@@ -21,7 +21,9 @@ function switchClassName(obj, str) {
 
 // Testujemy
 var obj = { className: 'first bordered' };
+
 switchClassName(obj, 'visible');
 console.log(obj.className);
+
 switchClassName(obj, 'bordered');
 console.log(obj.className);

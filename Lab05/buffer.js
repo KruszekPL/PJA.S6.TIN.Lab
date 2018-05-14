@@ -16,7 +16,9 @@ function createBuffer() {
 
 // Testujemy
 var buffer = createBuffer();
+
 buffer('Data');
 buffer(' aequatione ');
 buffer('quotcunque');
+
 console.log(buffer());

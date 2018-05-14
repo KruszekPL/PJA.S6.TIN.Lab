@@ -9,5 +9,5 @@ function sum() {
     return s;
 }
 
-// Testujemy
+// Testujemy 
 console.log(sum(0, 1, 2));
