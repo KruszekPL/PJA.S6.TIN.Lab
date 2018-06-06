@@ -1,0 +1,9 @@
+<%- include("partials/header.ejs") %>
+
+<% if( typeof books == 'undefined') { %>
+    <%- include("partials/main.ejs")%>
+<% } else {%>
+    <%- include("partials/genre.ejs")%>
+<% } %>
+
+<%- include("partials/header.ejs") %>

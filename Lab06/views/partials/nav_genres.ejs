@@ -1,0 +1,13 @@
+<% if(typeof className != 'undefined') { %>
+    <nav class='<%= className%>'>
+<% } else { %>
+    <nav>
+<% } %>
+<ul>
+    <% for(var i=0; i<genres.length; i++) {%>
+       <li><a href="/<%= genres[i] %>">
+           <%= genres[i] -%>
+       </a></li>
+    <% } -%>
+</ul>
+</nav>

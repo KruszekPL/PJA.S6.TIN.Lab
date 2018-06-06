@@ -1,0 +1,52 @@
+body{background-color:#fffff0}
+
+h2{
+    text-transform: capitalize;
+}
+
+.author{
+    font-variant: small-caps;
+}
+
+.title{
+    font-style: italic;
+}
+
+
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+nav.small ul{
+    text-align: left;
+    display: block;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 1em;
+    background-color: aquamarine;
+    margin: 0.25em 0pt 0pt 0pt;
+    font-size: 200%;
+    text-transform: capitalize;
+}
+
+nav li:hover{
+    background-color: cadetblue;
+}
+
+nav.small li {
+    font-size: 80%;
+    padding: 0.333333em;
+}
+
+nav.small ul li:not(:first-child) {
+    border-left: solid black 1px;
+}
+
+nav.small ul li {
+    display: inline;
+}
