@@ -1,0 +1,25 @@
+{
+  "name": "bookstore",
+  "version": "0.1.0",
+  "description": "Księgarnia Żurek",
+  "main": "serwer.js",
+  "scripts": {
+    "start": "node serwer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.10.1",
+    "express": "^4.11.0",
+    "morgan": "^1.5.1",
+    "taffy": "^2.6.2",
+    "serve-favicon": "^2.2.0",
+    "express-session": "^1.11.3",
+    "ejs": "^2.5.5"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-compress": "^1.0.1",
+    "grunt-contrib-rename": "^0.2.0"
+  }
+}

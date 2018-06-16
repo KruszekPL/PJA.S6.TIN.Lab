@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Księgarnia Żurek</title>
+  <link rel="stylesheet" href="css/styl.css" />
+  <!-- <script src="jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Księgarnia Żurek</h1>
+    </header>
+    <a style='display:none;' id="logout" href="/logout"><span class="jsLoggedUser"></span> - Wyloguj</a>
+    <nav>
+        <ul></ul>
+    </nav>
+    <section>
+        <h2 style='display:none'></h2>
+        <form class="newItem" style='display:none'>
+            <p>
+                <span>Tytuł: </span><input required='required' />
+            </p>
+            <p>
+                <span>Autor: </span><input required='required' />
+            </p>
+            <p>
+                <input type='submit' value="Dodaj książkę" />
+            </p>
+        </form>
+    </section>
+    <form class="login" style="display: none">
+        <h3>Logowanie</h3>
+        <div>
+            <label for="username">Nazwa użytkownika</label>
+            <input id="username" name="username" type="text" required="required" autocomplete="off" />
+        </div>
+        <div>
+            <label for="password">Hasło</label>
+            <input id="password" name="password" type="password" required="required" autocomplete="off" />
+        </div>
+        <div>
+            <button type="submit">Zaloguj się</button>
+        </div>
+    </form>
+</body>
+</html>

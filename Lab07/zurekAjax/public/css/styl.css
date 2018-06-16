@@ -1,0 +1,78 @@
+body{background-color:#fffff0}
+
+h2{
+    text-transform: capitalize;
+}
+
+.author{
+    font-variant: small-caps;
+}
+
+.title{
+    font-style: italic;
+}
+
+.clickable{
+   text-decoration: underline;
+   cursor: pointer;
+   color: navy;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+nav.small ul{
+    text-align: left;
+    display: block;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 1em;
+    background-color: aquamarine;
+    margin: 0.25em 0pt 0pt 0pt;
+    font-size: 200%;
+    text-transform: capitalize;
+}
+
+nav li:hover{
+    background-color: cadetblue;
+}
+
+nav.small li {
+    font-size: 80%;
+    padding: 0.333333em;
+}
+
+nav.small ul li:not(:first-child) {
+    border-left: solid black 1px;
+}
+
+nav.small ul li {
+    display: inline;
+}
+
+table th,
+table td {
+    padding: 4px 8px;
+    border: solid 1px #f0f0f0;
+}
+
+.popup, .login {
+    border: solid 1px #c0c0c0;
+    border-radius: 5px;
+    position: fixed;
+    background: #ffffff;
+    padding: 25px;
+    top: 40%;
+    left: 40%;
+}
+
+.login label {
+    display: inline-block;
+    width: 140px;
+}
